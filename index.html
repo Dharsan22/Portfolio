@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Dharsan B</div>
+        <div>
+            <ul class="nav-links">              
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#contact_me">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Dharsan B</div>
+        <div class="hamburger-menu"> 
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+         <div class="menu-links">
+    
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+            <li><a href="#project" onclick="toggleMenu()">project</a></li>
+            <li><a href="#contact_me" onclick="toggleMenu()">Contact</a></li>
+         </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="photo.png.png" alt="dharsan profile">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1"> hello,I'm</p>
+            <h1 class="title">Dharsan</h1>
+            <p class="section_text_p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./resume/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="linkedin-icon.jpeg"
+                 alt="my linkedin profile" 
+                 class="icon" 
+                 onclick="location.href='https://www.linkedin.com/in/dharsan-b-121233233/'">
+
+                 <img src="github-png.png"
+                 alt="my github profile" 
+                 class="icon" 
+                 onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+        <img src="arrow.png" alt="arrow-icon"  class="icon arrow" onclick="location.href='./#About'">
+    </section>
+
+
+    <section id="about">
+        <p class="section_text_p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img 
+                src="photo.png.png" 
+                alt="profile picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="bsc.jpeg"
+                        alt="experience"
+                        class="icon">
+                        
+                        <p><h3>UG - B.Sc Computer Science.</h3><br> Hindusthan college of arts and science,coimbatore.<br><br> CGPA- 7.9</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="achieve.jpeg"
+                        alt="Hsc-icon"
+                        class="icon">
+                        <h3>HSC</h3>
+                        <p><h3></h3><br>JSR Hr Sec School,Madathukulam.<br><br>percentage - 86.5%</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="achieve.jpeg"
+                        alt="SSLC-icon"
+                        class="icon">
+                        <h3>SSLC</h3>
+                        <p><h3></h3><br>JSR Hr Sec School,Madathukulam.<br><br>percentage - 77.45</p>
+                    </div>
+                </div>
+               <div class="text-container">
+                <p><h4>I'm a Software Developer,Intrested in working for a for MNC company.Searching for a job where I can grow my knoweldge towards the growth of my career as well as the company.</h4></p>
+               </div>
+            </div>
+        </div> 
+        <img src="arrow.png" alt="arrow-icon"  class="icon arrow" onclick="location.href='./#skill'">
+    </section>
+
+
+    <section id="skill">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skill</h1>
+        <div class="skill-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skill-sub-title">Frontend developement</h2>
+                    <div class="article-container">
+                    <article>
+                        <img src="html.jpeg" alt="html-icon"  class="icon">
+                        <div>
+                            <h3>HTML</h3>
+                            <p>intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="css.png" alt="css-icon"  class="icon">
+                        <div>
+                            <h3>CSS</h3>
+                            <p>intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="js.jpeg" alt="js-icon"  class="icon">
+                        <div>
+                            <h3>JAVASCRIPT</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="react.jpeg" alt="react-icon"  class="icon">
+                        <div>
+                            <h3>REACT JS</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="figma.png" alt="figma-icon"  class="icon">
+                        <div>
+                            <h3>FIGMA</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
+                </div>               
+                </div>
+                <div class="details-container">
+                <h2 class="skill-sub-title">Backend developement</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="node.png" alt="node-icon"  class="icon">
+                        <div>
+                            <h3>NODE JS</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="sql.png" alt="sql-icon"  class="icon">
+                        <div>
+                            <h3>SQL</h3>
+                            <p>basic</p>
+                        </div>
+                    </article>
+                </div>
+             </div>
+           </div>
+        </div>
+        <img src="arrow.png" alt="arrow-icon"  class="icon arrow" onclick="location.href='./#Project'">
+    </section>
+
+    <section id="Project">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="" alt="project1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="" alt="project2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">main project<br>Project Two</h2>
+                <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <img src="arrow.png" alt="arrow-icon"  class="icon arrow" onclick="location.href='./#Project'">
+    </section>
+    <section id="contact_me">
+        <p class="section_text_p1">Get in touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="linkedin-icon.jpeg" alt="LinkedIn icon" class="icon contact-icon email--icon">
+                <p><a href="https://www.linkedin.com/in/dharsan-b-121233233/">LinkedIn</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="email.png" alt="email icon" class="icon contact-icon">
+                <p><a href="mailto:dharsan2226@gmail.com">dharsan2226@gmail.com</a></p>
+            </div>
+        </div>   
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#contactme">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169;  2023 dharsan. All Right Reserved.</p>
+    </footer>
+    <script src="portfolio.js"></script>
+</body>
+</html>
+
